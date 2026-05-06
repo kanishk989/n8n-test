@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "name": "linkedin-job-scraper",
+  "title": "LinkedIn Job Scraper",
+  "description": "Scrapes job listings from LinkedIn",
+  "version": "0.0",
+  "meta": {
+    "templateId": "cheerio-scraper"
+  },
+  "input": "./.actor/INPUT_SCHEMA"
+}

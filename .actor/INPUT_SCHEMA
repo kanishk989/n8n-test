@@ -1,0 +1,33 @@
+{
+  "title": "LinkedIn Job Scraper Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "urls": {
+      "title": "LinkedIn Job Search URLs",
+      "type": "array",
+      "description": "List of LinkedIn job search URLs to scrape",
+      "editor": "stringList",
+      "prefill": [
+        "https://www.linkedin.com/jobs/search/?keywords=Software%20Engineer&location=Gurgaon%2C%20CA&f_TPR=r86400&f_WT=1%2C2&sortBy=DD"
+      ]
+    },
+    "scrapeCompany": {
+      "title": "Scrape Company Details",
+      "type": "boolean",
+      "description": "Whether to scrape additional company information",
+      "default": false,
+      "editor": "checkbox"
+    },
+    "count": {
+      "title": "Number of Jobs",
+      "type": "integer",
+      "description": "Maximum number of job listings to scrape per URL",
+      "default": 10,
+      "minimum": 1,
+      "maximum": 100,
+      "editor": "number"
+    }
+  },
+  "required": ["urls"]
+}
